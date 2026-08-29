@@ -1,6 +1,7 @@
 package com.classora.prices.service;
 
 import com.classora.prices.dto.PriceResponse;
+import com.classora.prices.mapper.PriceMapper;
 import com.classora.prices.model.Price;
 import com.classora.prices.repository.PriceRepository;
 import lombok.RequiredArgsConstructor;
@@ -14,6 +15,8 @@ import java.util.Optional;
 public class PriceServiceImpl implements PriceService {
 
     private final PriceRepository priceRepository;
+
+    private final PriceMapper priceMapper;
 
     @Override
     public PriceResponse getApplicablePrice(Long brandId, Long productId, LocalDateTime applicationDate) {
