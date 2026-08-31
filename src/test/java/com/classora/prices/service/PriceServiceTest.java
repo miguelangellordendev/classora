@@ -22,7 +22,7 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
-class PriceServiceImplTest {
+class PriceServiceTest {
 
     private static final Long BRAND_ID = 1L;
 
